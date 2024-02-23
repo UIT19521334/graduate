@@ -1,0 +1,5 @@
+- Muốn chekin phải lên CRM checkin.
+- Dịch vụ không hiển thị tiền.
+- Hình do sever lưu ko thấy đc ??
+- Có cần mở link dev không
+- Đã hoàn thiện cách code Lấy address --> Chuyển từ component sang page để navigate không bị reload lại trang

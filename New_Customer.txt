@@ -1,0 +1,15 @@
+B1: Tạo lead mới (thường là xóa lead có sđt của anh đi rồi gọi lại hoặc anh có thể đổi sđt của mình trong lead cũ thành số khác cho nhanh)
+B2: Màn hình callLog sẽ hiển thị cuộc gọi
+B3: Chấp nhận cuộc gọi
+B4: kết thúc cuộc gọi sẽ có button "Tạo khách hàng mới"
+B5: Điền tên và bấm lưu /*LỖI Ở ĐÂY*/
+--> Field yêu cầu nhập là tên và sđt thôi nhưng khi nhập chừng đó thì không lưu được ( nhưng khi điền thêm thông tin ( quận/ huyện - tỉnh/thành - quốc gia) thì sẽ lưu được.
+
+*NOTE: 
+	- Anh cần tải file apk em gửi để test, 
+	- Tất nhiên app cty vẫn test được nhưng cần điều chỉnh gì đó để khách hàng mới gọi đện mà chuyển hướng vào account của anh. 
+	- tài khoản test đã có ext 121 ( đã được tích hợp sđt của anh nên anh cứ lấy số anh mà gọi tới thôi)
+		+ Account : chi.dat
+		+ Password: crm12345
+	- Cái hàm anh cần sửa có lẽ là hàm saveNewCustomer trong file  src/softphone/SoftPhoneHelper.js (hoặc là trong 2 module "StringeeForAndroidModule.js" với "StringeeForIOSModule.js")
+	- hàm saveNewCustomer nếu anh sửa xong thì vô sửa đổi saveNewCustomer trong hai moduleStringee "StringeeForAndroidModule.js" với "StringeeForIOSModule.js" luôn nha. Hàm trong đó ý chang hàm ở SoftPhoneHelper.js luôn.

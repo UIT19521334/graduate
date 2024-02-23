@@ -1,0 +1,20 @@
+/*CODE PUSH*/
+
+code push dùng để update nhanh app có sẵn trên store và chỉ update được code (js) -- native code không được.
+
+( Lên trang chủ của app center: appcenter.ms )
+cài app center quản lý tất các các app
+	- cài npm i -g appcenter-cli & login
+	- Mỗi app tạo 2 project app (IOS-Android)
+	- Icon nhỏ hơn 512px
+	- Quan tâm Distribute
+		+ Releasses (Trả phí - nên ko dùng)
+		+ CodePush (stating(dùng thử)/Production(phát hành)
+		+  Staring là lần 2-3-4-5,...
+		+ Production là lần đầu tiền
+	--> Host để gọi prortal ( lên đầu trang không bị chứa trong các size khác)
+	--> Có bản cập nhật --> Show ở codePussh
+		Trong splash screens/ setup.js
+		Có các option để lựa chọn và xử lí các tính năng.
+				
+			

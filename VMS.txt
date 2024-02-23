@@ -1,0 +1,105 @@
+VMS: Quy trình nhận task
+- Tạo công việc trên CRM
+- Nhận/Từ chối task ở admin
+- Kết quả taskTest => phải nhấn kiểm tra trước lưu. 
+
+# Task giao hàng
+- (4 task giao hàng-lắp đặt - hướng dẫn - nghiệm thu) có thể chung một lượt, chung một chuyến đi.
+- Riêng trường hợp nghiệm thu có thể trong ngày/ hôm sau.
+--> nhấn giữ --> nhấn dấu tích ở ngoài --> tạo phiếu công tác cho 4 task 1 lần
+
+- Tại sao có thông báo "có công việc giao hàng chưa được nhận hàng..." --> phải đi nhận hàng trước --> nhấn vào task giao hàng --> nhận hàng.
+
+- Quay lại phiếu công tác --> checkin --> bắt đầu(checkin) --> ... --> kết quả task giao hàng.
+
+## Giao hàng thành công --> lắp đặt máy 
+
+- Trước khi nhập kết quả phải chọn sp/lk xử lý (VD: TH giao 10 tbi chỉ lắp 3 cái ...) --> Chọn từ phiếu giao (phiếu ứng) --> ('>1 cái') --> (Sản phẩm phải nhập số lượng --> là tbị non-seri --> nhập để biết )
+- Hiển thị kết quả lắp đặt.
+
+## Kết quả hướng dẫn 
+- Nhập nội dung hướng dẫn, thêm danh sách người tham gia.
+- Nhập nhận xét khách hàng, nhập đánh giá.
+
+## Nghiệm thu
+- Nhập họ tên/sđt/mô tả.
+- Nhập chữ kỹ
+- Đánh giá kết quả.
+
+# LỊCH SỬ THIẾT BỊ
+- Nhập seri để tìm thiết bị
+- Chọn để hiển thị lịch sử thiết bị ( ngày lắp đặt, phiếu kết quả, thông tin task, công việc,...)
+
+VMS - SALE APP Có những tính năng:
+--> Vào link vms-dev.cloudpro.vn --> tạo account với vài trò là sale management
+- Tổng quan thông tin trong trang chủ ( Thống kê, doanh số , hoa đồng(team sale), chỉ có sale management là thấy hết) trong ngày
+
+# Check in
+--> như app cloudpro
+
+# Bản đồ khách hàng
+- Có lọc khách hàng và xem khách hàng theo vị trí.
+
+# Danh sách đầu mối (từ menu/trang chủ)
+- Có bộ lọc tìm kiếm giống bộ lọc trên crm ( bộ lọc của tôi/ bộ lọc chia sẻ,...) 
+- Hiển thị lead (20/610)
+- Thêm mới đầu mối ( Tên, email, chức danh, bộ phận, ngành nghề, mã số thuế...) tương tự thư crm.
+	* có thể tạo link dev để xem các nghiệp vụ và chức năng
+	* chọn thương thiệu thị trường thì mới hiển thị ô nhập thương hiệu
+	* địa chỉ sẽ được gợi ý khi nhập ('How  to code this') và sẽ map theo địa chỉ/ thành phố
+
+# Danh sách người liên hệ tương tự như danh sách lead (chủ yếu điền form)
+ --> Người liên hệ giao cho để làm gì ???
+ --> Nhấn để xem chi tiết người liên hệ
+- Nhấn vào địa chỉ thì nó mở gg map lên ( cần gg key ko tiền nạp hay ko ,... )
+
+# Hoạt động ( nhấn vào sẽ hiển thị 2 hoạt động công việc/ hoạt động)
+
+# Tạo nghỉ phép --> có thể tạo hoạt động
+
+# Công ty
+- Bộ lọc (như crm)
+- Thêm công ty:
+	+ Điền các trường
+	+ Địa chỉ có tính năng sao chép
+	+ Nhập thương hiệu
+- Chi tiết công ty:
+	+ Hoạt động (Thông tin chi tiết hoạt động.)
+	+ Chi tiết
+	+ Liên quan (Liên hệ, cơ hội, đơn hàng, thiết bị,...)
+	+ Thêm liên quan --> Chọn công ty trước --> chọn người liên hệ (Hiển thị người liên hệ của công ty thôi) nếu chọn người liên hệ trước sẽ có lỗi
+	+ Phải nhập số lượng > 0, nếu ko lưu có lỗi
+	* Thêm cơ hội: (không hiểu lắm)
+		<< 32.32 --> 36.12 >>
+		- Thêm nhóm
+		- Tổng tiền (có thuế (điều chỉnh ở web)
+		- Chuyển bước cơ hội (chưa rõ lắm)
+	* Kiểm tra tồn kho
+# Lịch làm việc ( làm sao để tạo được lịch làm việc như vậy )
+
+js --> component: 
+	--> AnnountceMent(dư)
+	--> Checkin /ChekinCamera
+	--> Component (component cho các hàm trong component)
+	--> GlobalSearch: để làm gì
+
+/** TASK SỬA CHỮA - BẢO TRÌ VMS **/
+	- Global checkNetworkTask: cứ 60s sẽ check network lại một lần
+	- upDate counter: 30p counter lại 1 lần (counter là gì..)
+	- 30p logLocation 1 lần
+	- stopBackGroundTask tắt setService 
+js --> App.js:
+	(đã tích hợp code push...)
+	--> <AppNavigator/>
+	--> Drawer tại sao lại là Scene
+	--> removeDeviceID (xóa token device)
+	--> AppNavigate dùng Actions của react navigation flux
+	--> direction trong naviagte là chuyển hướng màn hình ( theo chiều dọc )
+
+# Công việc
+	- Load ra phần chưa nhận.
+	- Danh sách chung/ danh sách được giao
+
+
+
+

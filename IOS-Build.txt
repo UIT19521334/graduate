@@ -1,0 +1,2 @@
+(IOS) cmd + shift + k  = ./gradlew clean (Android)
+

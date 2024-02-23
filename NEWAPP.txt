@@ -1,0 +1,17 @@
+ Một số thông tin cần tìm hiểu:
+ - Giao thức UDP và TCP là gì.
+SIP ( Session Initiation Protocol có nghĩa là giao thức khởi tạo phiên )
+ - Sip Phone (IPPhone) điện thoại IP là điện thoại bàn trên công nghệ internte hỗ trợ chuẩn sip để kết nối với các tổng đài ảo, tổng đài IP
+ - DTFM là gì :
+	DTMF là  một chuẩn về bấm phím trên tổng đài giúp cho việc bấm phím khi nghe lời chào.
+	(Một số chuẩn được sử dụng phổ biến: inband, rfc2833, info, auto)
+- Cấu hình DTFM : 
+	Chuẩn bấm phím thường được thiết lập ở phần cấu hình sip trunking với nhà mạng. và có thể thiết lập thêm ở phần cấu hình thiết bị điện thoại IP.
+- Register event listener SIP : "ĐỂ LÀM GÌ ???"
+- ForEach() --> gọi một hàm cho từng phần tử trong array
+- Stringee CallAPI (Ứng dụng  -> nhận nhạc chờ, bấm số) VideoCall ??
+
+CÁC BƯỚC SỬ DỤNG VOICE24H
+
+-  GraphModule.getAccessToken() ==>
+- GraphModule.sendRequest() ==> 

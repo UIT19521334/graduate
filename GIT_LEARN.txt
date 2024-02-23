@@ -1,0 +1,2 @@
+-- Current : là thay đổi của chúng ta hiện tại.
+-- IncomingChange  là thay đổi trên server( của người khác)

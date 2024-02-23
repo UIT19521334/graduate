@@ -1,0 +1,20 @@
+#APP PHỤ HUYNH
+--> Chú ý vào thông báo điểm danh với thông báo lên xe bus
+--> thời gian thanh cuộn
+--> Bảng tin
+--> Điểm danh
+	+ Giáo viên
+	+ Xe buýt
+	+ Chỉ hiển thị thông tin
+	+ 
+	+ Section list --> 
+--> Theo dõi học sinh
+
+# Các tiêu chí của app phụ huynh
+
+#APP TEACHER
+
+all
+
+
+
